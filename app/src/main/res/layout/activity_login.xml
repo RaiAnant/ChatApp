@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.projects.rtk154.firebasedemoapp.LoginActivity">
+    <LinearLayout
+        android:id="@+id/LoginLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In Here"
+            android:gravity="center"
+            android:textSize="36sp"/>
+
+        <EditText
+            android:id="@+id/LoginEmailET"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Email"/>
+        <EditText
+            android:id="@+id/LoginPasswordET"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter a New Password"/>
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in"/>
+        <TextView
+            android:id="@+id/forgotPassTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Forgot Password ? "/>
+        <TextView
+            android:id="@+id/registerTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="New User ? Register Here !! "/>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBarView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LoginLV"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:padding="16dp"/>
+
+</RelativeLayout>
